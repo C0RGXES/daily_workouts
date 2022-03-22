@@ -4,7 +4,7 @@ import string
 
 def parce_data_Deadfish(data: string):
     
-    result_arr = []
+    result_list = []
     num = 0
 
     for simbol in data:
@@ -15,9 +15,9 @@ def parce_data_Deadfish(data: string):
         elif simbol == 's':
             num *= num
         elif simbol == 'o':
-            result_arr.append(num)
+            result_list.append(num)
 
-    return result_arr
+    return result_list
 
 
 
