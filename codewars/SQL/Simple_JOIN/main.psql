@@ -1,0 +1,10 @@
+select 
+  products.id,
+  products.name,
+  products.isbn,
+  products.company_id,
+  products.price,
+  companies.name as company_name
+from products as products 
+left join companies as companies
+on products.company_id = companies.id
